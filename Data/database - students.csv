@@ -1,0 +1,15 @@
+StudentID,FirstName,LastName,Email,Major,AID,CourseID,Marks
+8186,renata ,lynch,lynch@gmail.com,cs,a1,cs210,45
+4012,zane,morrison,morrison@yahoo.com,ece,a8,cs456,89
+6759,anna,melendez,anna@zylker.com,mech,a3,mech678,90
+2987,nikolas,barnett,barnett@usc.edu,ee,a6,bio344,56
+5297,harlow,schwartz,hasc@iitdm.ac.in,bio,a4,civil234,77
+6649,edwin,douglas,doug@domain.com,civil,a5,ee551,94
+9036,aniyah,jacobson,ani@gmail.com,cs,a2,cs547,90
+2318,legacy,miranda,miranda@yahoo.com,ece,a8,ece265,52
+3806,amina,mcbride,amina@zylker.com,mech,a9,mech452,63
+1702,denver,ellison,denverelli@domain.com,arch,a10,arch543,92
+2201,raina,buckley,raina@isi.edu,mech,a3,mech678,87
+2202,aryan,becker,beck@weapp.com,bio,a11,bio344,33
+1205,laura,pinkton,laura@usc.edu,ee,a6,ee551,67
+7345,arturo,manning,mann@weapp.edu,arch,a10,arch543,58

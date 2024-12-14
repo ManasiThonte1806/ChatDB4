@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9a0; /* This will be used as a fallback color */
+    background-image: url('image.jpg'); /* Path to your background image */
+    background-size: cover; /* Ensures the image covers the entire viewport */
+    background-position: center; /* Keeps the image centered */
+    background-repeat: no-repeat; /* Ensures the image doesn't repeat */
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start; /* Aligns content to the left */
+    align-items: center; /* Keeps vertical centering */
+    height: 100vh;
+}
+
+
+/*.page {
+    background: royalblue;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+}*/
+
+.page {
+    background: cornflowerblue;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+
+    /* Positioning changes to move the box to the left */
+    margin-right: auto; /* Pushes the box to the left */
+    margin-left: 150px; /* Explicitly sets left margin to 0 */
+}
+
+
+/* Headings */
+h1, h2 {
+    margin: 0 0 20px;
+}
+
+/* Buttons and dropdowns */
+button, select {
+    background-color: steelblue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+button:hover, select:hover {
+    background-color: #45a049;
+}
+
+select {
+    display: block;
+    margin: 10px auto;
+    width: 200px;
+    font-size: 16px;
+}
+
+/* Form and file input */
+form {
+    margin-top: 20px;
+}
+
+input[type="file"] {
+    margin-bottom: 10px;
+}
+
+/* Chat container styles */
+.chat-container {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.chat-output {
+    height: 200px;
+    overflow-y: auto;
+    padding: 10px;
+    background-color: white;
+}
+
+.chat-input {
+    display: flex;
+    padding: 10px;
+    background-color: #f0f0f0;
+}
+
+.chat-input input {
+    flex-grow: 1;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.chat-input button {
+    margin-left: 10px;
+}
+
+/* Page-specific sections */
+#page2Available select, 
+#page2Upload input[type="file"] {
+    margin-top: 15px;
+}
+
+/* Add subtle distinction for each second page */
+#page2Available {
+    background-color: #e7ffe7;
+}
+
+#page2Upload {
+    background-color: #ffe7e7;
+}
+
+/* Highlight selected dataset name */
+#selectedDataset {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}

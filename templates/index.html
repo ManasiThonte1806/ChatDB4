@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatDB</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <!-- First Page -->
+    <div id="page1" class="page">
+        <h1>Welcome to ChatDB</h1>
+        <p>Select a database type:</p>
+        <select id="dbTypeSelect">
+            <option value="">Choose a database type</option>
+            <option value="SQL">SQL</option>
+            <option value="NoSQL">NoSQL</option>
+        </select>
+        <p style="margin-top: 20px;">Select a data source:</p>
+        <select id="dataSourceSelect">
+            <option value="">Choose a data source</option>
+            <option value="Available">Available Dataset</option>
+            <option value="Upload">Upload Dataset</option>
+        </select>
+        <button onclick="navigateFromPage1()" style="margin-top: 20px;">Next</button>
+    </div>
+
+    <!-- Second Page for Available Dataset -->
+    <div id="page2Available" class="page" style="display: none;">
+        <h2>Select an Available Dataset</h2>
+        <select id="datasetSelect">
+            <option value="">Choose from available datasets</option>
+        </select>
+        <button onclick="showPage('page1')">Back</button>
+        <button onclick="finalizeSelection()" style="margin-top: 20px;">Next</button>
+    </div>
+
+    <!-- Second Page for Upload Dataset -->
+    <div id="page2Upload" class="page" style="display: none;">
+        <h2>Upload a Dataset</h2>
+        <form id="uploadForm">
+            <input type="file" id="fileInput" accept=".sql,.json,.csv">
+            <button type="submit">Upload Dataset</button>
+        </form>
+        <button onclick="showPage('page1')">Back</button>
+        <button onclick="finalizeSelection()" style="margin-top: 20px;">Next</button>
+    </div>
+
+    <!-- Third Page -->
+    <div id="page3" class="page" style="display: none;">
+        <h2>Schema Details</h2>
+        <div id="schemaDisplay">
+            <!-- Schema details will be dynamically populated here -->
+        </div>
+        <button onclick="showPage('page2Available')">Back</button>
+        <button onclick="showPage('page4')" style="margin-top: 20px;">Proceed to Query</button>
+    </div>
+
+    <!-- Fourth Page -->
+    <div id="page4" class="page" style="display: none;">
+    <h2>ChatDB Interaction</h2>
+    <p id="selectedDataset"></p>
+    <div class="chat-container">
+        <div id="chatOutput" class="chat-output"></div>
+        <div class="chat-input">
+            <input type="text" id="userInput" placeholder="Enter your query...">
+            <button onclick="sendQuery()">Enter</button>
+        </div>
+    </div>
+    <button onclick="showPage('page3')">Back</button>
+</div>
+
+<script src="/static/script.js"></script>
